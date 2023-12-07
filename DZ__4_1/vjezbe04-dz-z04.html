@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+polje = new Array(1,2,3,4,7,8,5,6,9,55,12,4,85);
+document.write(polje.length,"<br>");
+document.write(polje.sort(function(a, b){return b - a}),"<br>");
+polje.sort(function(a, b){return a - b});
+document.write(polje,"<br>");
+polje.pop();
+polje.push(19,22);
+polje2 = new Array("Banana", "Orange", "Apple", "Mango");
+polje_final = new Array;
+polje_final = polje.concat(polje2);
+document.write(polje_final);
+ </script>
+</body>
+</html>

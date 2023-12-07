@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+  let osoba1 = { firstName: "Marko", lastName: "Maric", age: 40, eyeColor: "black" };
+  let osoba2 = { firstName: "Ivan", lastName: "Ivanic", age: 25, eyeColor: "blue" };
+  let osoba3 = { firstName: "Ana", lastName: "Anic", age: 18, eyeColor: "green" };
+
+  let osobe = [osoba1, osoba2, osoba3];
+
+  for (let i = 0; i < osobe.length; i++) {
+   document.write(JSON.stringify(osobe[i]),"<br>");
+  }
+
+ </script>
+</body>
+</html>

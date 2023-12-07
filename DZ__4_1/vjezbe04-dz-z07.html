@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+ <meta charset="UTF-8" />
+ <title>Varijable</title>
+</head>
+<body>
+ <script type="text/javascript">
+
+  let varijabla = function (broj){
+   if(typeof broj === "number"){
+    return "Kvadrat unesenog broja je" + " " + broj*broj;
+   } else{
+    return "Pogreška, niste unijeli broj!"
+   }
+  }
+  console.log(varijabla(5));
+  console.log(varijabla('5'));
+  console.log(varijabla("a"));
+ </script>
+</body>
+</html>
