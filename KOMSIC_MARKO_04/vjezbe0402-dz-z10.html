@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca0402_Marko_Komsic</title>
+</head>
+<body>
+<script type="text/javascript">
+    window.onload = function() {
+
+        document.querySelector('p a').addEventListener('click', function(event) {
+            event.preventDefault();
+
+            let noviParagraf = document.createElement('p');
+            noviParagraf.textContent = 'Ovo je novi paragraf teksta.';
+
+            let lokacija = document.getElementById('thisLocation');
+            lokacija.parentNode.insertBefore(noviParagraf, lokacija.nextSibling);
+        });
+    };
+</script>
+<p><a href="#">Kliknite ovdje da dodate novi paragraf tekst</a></p>
+<p id="thisLocation">Novi paragrafi teksta će se pojaviti ispod</p>
+<p>Ovo je defaultni prvi paragraf teksta</p>
+</body>
+</html>

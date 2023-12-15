@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca0402_Marko_Komsic</title>
+</head>
+<body>
+
+<input type="number" id="operand1"> operand1 </br> </br>
+<input type="number" id="operand2"> operand2 </br> </br>
+
+<button onclick="izracun('zbroji')">+</button>
+<button onclick="izracun('oduzmi')">-</button>
+<button onclick="izracun('mnozi')">*</button>
+<button onclick="izracun('dijeljenje')">/</button> </br> </br>
+<button onclick="izracun('sin')">sin</button>
+<button onclick="izracun('cos')">cos</button>
+<button onclick="izracun('tan')">tan</button> </br> </br>
+<button onclick="izracun('log')">ln</button>
+<button onclick="izracun('log10')">log10</button> </br> </br>
+<button onclick="izracun('kvadrat')">^2</button>
+<button onclick="izracun('kubiraj')">^3</button>
+<button onclick="izracun('potenciraj')">^n</button>
+
+
+
+
+<script type="text/javascript">
+    function izracun(operation) {
+        let num1 = parseFloat(document.getElementById('operand1').value);
+        let num2 = parseFloat(document.getElementById('operand2').value);
+        let rezultat;
+
+        switch (operation) {
+            case 'zbroji':
+                rezultat = num1 + num2;
+                break;
+            case 'oduzmi':
+                rezultat = num1 - num2;
+                break;
+            case 'mnozi':
+                rezultat = num1 * num2;
+                break;
+            case 'dijeljenje':
+                rezultat = num1 / num2;
+                break;
+            case 'sin':
+                rezultat = Math.sin(num1);
+                break;
+            case 'cos':
+                rezultat = Math.cos(num1);
+                break;
+            case 'tan':
+                rezultat = Math.tan(num1);
+                break;
+            case 'log':
+                rezultat = Math.log(num1);
+                break;
+            case 'log10':
+                rezultat = Math.log10(num1);
+                break;
+            case 'kvadrat':
+                rezultat = Math.pow(num1, 2);
+                break;
+            case 'kubiraj':
+                rezultat = Math.pow(num1, 3);
+                break;
+            case 'potenciraj':
+                rezultat = Math.pow(num1, num2);
+                break;
+            default:
+                rezultat = 'Nepoznata operacija';
+        }
+        alert(rezultat);
+
+    }
+
+</script>
+</body>
+</html>
