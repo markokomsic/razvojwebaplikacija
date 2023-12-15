@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Zadaca0402_Marko_Komsic</title>
+</head>
+<body>
+<img src="off-removebg-preview.png" id="prekidac" style="cursor: pointer;" onclick="prebaciSvjetlo()" />
+<img src="zarulja_off_2.png" id="zarulja" />
+<script type="text/javascript">
+    let putanjaPrekidacUkljucen = 'on-removebg-preview.png';
+    let putanjaPrekidacIskljucen = 'off-removebg-preview.png';
+    let putanjaZaruljaUkljucena = 'zarulja_on_2.png';
+    let putanjaZaruljaIskljucena = 'zarulja_off_2.png';
+    let jeSvjetloUkljuceno = false;
+
+    function prebaciSvjetlo() {
+        jeSvjetloUkljuceno = !jeSvjetloUkljuceno;
+        document.getElementById('prekidac').src = jeSvjetloUkljuceno ? putanjaPrekidacUkljucen : putanjaPrekidacIskljucen;
+        document.getElementById('zarulja').src = jeSvjetloUkljuceno ? putanjaZaruljaUkljucena : putanjaZaruljaIskljucena;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8">
+  <title>Zadaca0402_Marko_Komsic</title>
+
+</head>
+<body>
+
+<button id="promijeniBoju">Promijeni pozadinu</button>
+<p id="trenutnaBoja">Trenutna boja: #FFFFFF</p>
+
+<script>
+  function promijeniPozadinu() {
+    let boja = '#256000';
+    document.body.style.backgroundColor = boja;
+    document.getElementById("trenutnaBoja").innerHTML = "Trenutna boja: " + boja;
+  }
+
+  document.getElementById("promijeniBoju").onclick = promijeniPozadinu;
+</script>
+
+</body>
+</html>
